@@ -6,7 +6,7 @@
 }
 
 .navbar {
-    background: #131313;
+    background: #222450;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -29,13 +29,7 @@
 }
 
 #navbar__logo {
-    background: #884d00;
-    background: linear-gradient(
-        to bottom, 
-    #3d2f00 7%,
-    #de8a22 27%,
-    #ffea00 67%
-        );
+    background: #ab382e;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -77,34 +71,8 @@
     width: 100%;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none; 
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #4b6cb7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right, 
-        #182848, 
-        #4b6cb7
-        );  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right, 
-        #182848, 
-        #4b6cb7
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #fff;
-    transition: all 0.3s ease;
-}
-
 .navbar__links:hover {
-    color: #ff9d00;
+    color: #fbe70d;
     transition: all 0.3s ease;
 }
 
@@ -132,7 +100,7 @@
     }
 
     .navbar__menu.active {
-        background: #131313;
+        background: #7e3131;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -204,12 +172,7 @@
 
 /* Hero */
 .hero {
-    background: #000000;
-    background: linear-gradient(
-        to right,
-        #161616, 
-        #000000
-        );
+    background: #c4c1bc;
     padding: 200px 0;
 }
 
@@ -225,24 +188,20 @@
     padding: 30px;
 }
 
+.hero__container p {
+    background-color: #dcdbd2;
+    color: #908d8d;
+    font-size: 20px;
+}
+
+.hero__container h1 {
+    color:#aa7b4f;
+}
+
 .hero__heading {
     font-size: 100px;
     margin-bottom: 24px;
     color: #fff;
-}
-
-.hero__heading span {
-    background: #ec8c0e;
-    background: linear-gradient(
-        to bottom, 
-    #3d2f00 7%,
-    #d4680f 27%,
-    #ffea00 80%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
 
 .hero__description {
@@ -254,12 +213,7 @@
     #f79927 39%,
     #ffea00 90%
         );
-    background: linear-gradient(
-        to bottom, 
-    #a56619 0%,
-    #f79927 39%,
-    #ffea00 90%
-        );
+    background: #fff;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -268,7 +222,7 @@
 }
 
 .highlight {
-    border-bottom: 4px solid rgb(255, 236, 24);
+    border-bottom: 4px solid rgb(58, 152, 64);
 }
 
 @media screen and (max-width: 768px) {
@@ -283,7 +237,7 @@
 
 /* About */
 .main {
-    background-color: #131313;
+    background-color: #cabfac;
     padding: 10rem 0;
 }
 
@@ -305,37 +259,9 @@
     width: 100%;
 }
 
-.main__content h1 {
-    font-size: 2rem;
-    background: #884d00;
-    background: linear-gradient(
-        to bottom, 
-    #3d2f00 7%,
-    #de8a22 27%,
-    #ffea00 67%
-        );
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
 .main__content h2 {
     font-size: 4rem;
-    background: #ff9203;
-    background: -webkit-linear-gradient(
-        to bottom, 
-    #a56619 0%,
-    #f79927 39%,
-    #ffea00 90%
-    );
-    background: linear-gradient(
-        to bottom, 
-    #a56619 0%,
-    #f79927 39%,
-    #ffea00 90%
-    );
+    background: #ab382e;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -351,17 +277,7 @@
 
 .main__btn {
     font-size: 1.8rem;
-    background: #4b6cb7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right, 
-        #182848, 
-        #4b6cb7
-        );  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right, 
-        #182848, 
-        #4b6cb7
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #222450;
     padding: 20px 60px;
     border: none;
     border-radius: 4px;
@@ -386,7 +302,9 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #003165;
+    background-image: url("images/red.gif");
+    background-size: cover;
+    background-color: #254581;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -411,11 +329,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
+    color: #ebe577;
     background-image: linear-gradient(
         to right,
-        #3d33c3 0%,
-        #fab114 100%);
+        #cabfac 0%,
+        #aa7b4f 100%);
 }
 
 .fa-solid, .fa-circle-user {
@@ -425,14 +343,14 @@
 #card-2 {
     background: #833ab4;
     background: -webkit-linear-gradient(
-        to right,
+        to bottom,
         #fcb045,
         #fd1d1d
         );
     background: linear-gradient(
-        to right,
-        #fcb045,
-        #fd1d1d
+        to bottom,
+        #4056b9,
+        #2c0149
         );
 }
 
@@ -510,7 +428,7 @@
 
 /* Services */
 .services {
-    background: #131313;
+    background: #c4c1bc;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -520,12 +438,7 @@
 }
 
 .services h1 {
-    background: #884d00;
-    background: linear-gradient(
-        to bottom, 
-    #3d2f00 7%,
-    #de8a22 27%,
-    #ffea00 67%);
+    background: #aa7b4f;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -541,67 +454,28 @@
 
 .services__card {
     margin: 10px;
-    height: 425px;
+    height: 450px;
     width: 300px;
     border-radius: 4px;
     display: flex;
     padding: 10px;
     flex-direction: column;
     justify-content: center;
-    color: #000000;
-    background: #C02425;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right, 
-        #F0CB35, 
-        #C02425
-        );  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right, 
-        #F0CB35, 
-        #C02425
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    background: #ab382eea;  /* fallback for old browsers */
     transition: 0.3s ease-in;
 }
 
 .services__card:nth-child(2) {
-    background: #c21500;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right,
-        #ffc500,
-        #c21500
-        );  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right,
-        #ffc500,
-        #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #dccf42d4;
 }
 
 .services__card:nth-child(3) {
-    background: #e65c00;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right, 
-        #F9D423, 
-        #e65c00
-        );  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right, 
-        #F9D423, 
-        #e65c00
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgba(58, 152, 64, 0.77);
 }
 
 .services__card:nth-child(4) {
-    background: #C02425;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right, 
-        #F0CB35, 
-        #C02425
-        );  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right, 
-        #F0CB35, 
-        #C02425
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #43479c;
 }
 
 .services__card h2 {
@@ -615,6 +489,7 @@
     text-align: center;
     font-size: 16px;
     font-weight: 600;
+    list-style-type: none;
 }
 
 .services__card p {

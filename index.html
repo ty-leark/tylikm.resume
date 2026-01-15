@@ -1,74 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/368eb08090.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/368eb08090.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">Tylik Mawyer</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" 
+                    id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" 
+                    id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" 
+                    id="services-page">Work History</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#education" class="navbar__links" 
+                    id="education-page">Education</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="navbar__container">
-    <a href="#home" id="navbar__logo">Tylik Mawyer</a>
-    <div class="navbar__toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    <!--Hero -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">
+                RESUME
+            </h1>
+            <p>540 315 4575 | Tylikmawyer16@gmail.com</p>
+        </div>
     </div>
-    <ul class="navbar__menu">
-      <li><a href="#home" class="navbar__links" id="home-page">Home</a></li>
-      <li><a href="#about" class="navbar__links" id="about-page">About</a></li>
-      <li><a href="#services" class="navbar__links" id="services-page">Work History</a></li>
-      <li><a href="#education" class="navbar__links" id="education-page">Education</a></li>
-    </ul>
-  </div>
-</nav>
 
-<!-- HOME -->
-<section id="home" class="section section--hero">
-  <div class="section__inner hero">
-    <h1>RESUME</h1>
-    <p>540 315 4575 | Tylikmawyer16@gmail.com</p>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section section--about">
-  <div class="section__inner about">
-    <div class="about__image">
-      <i class="fas fa-circle-user"></i>
+    <!-- About -->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card"><i class="fas fa-solid fa-circle-user"></i></div>
+            </div>
+            <div class="main__content">
+                <h1></h1>
+                <h2>Professional Summary</h2>
+                <p>Systems Programmer and Military Veteran with an active Secret Security Clearance and three years of proven service in the 
+                    United States Navy.<br>
+                    Demonstrated success delivering measurable results while leading teams of 80+ personnel in low to mid-tempo, 
+                    military environments.<br> 
+                    Comprehensive background in logistics, aviation, and software engineering gained through domestic operations across 
+                    the United States.<br> 
+                    Effectively managed multi-layered risk to safeguard assets, property, and equipment valued in excess of $3B, while 
+                    consistently meeting senior leadership expectations.<br>
+                    Founder of Origin: Boredom©, a neighborhood service system.</p>
+                <button class="main__btn"><a href="#">Home</a></button>
+            </div>
+        </div>
     </div>
-    <div class="about__content">
-      <h2>Professional Summary</h2>
-      <p>
-        Systems Programmer and Military Veteran with an active Secret Security Clearance and
-        three years of service in the United States Navy...
-      </p>
+
+    <!-- Services  -->
+    <div class="services" id="services">
+        <h1>Work History</h1>
+        <br>
+        <div class="services__wrapper">
+            <div class="services__card">
+                <h2><br>
+                    Fulfillment Maestro<br>
+                    (Blue Ridge Beverage)</h2><br>
+                <p><u><i>6/2024 - 12/2024: Waynesboro, VA</i></u><br>
+                    <ul>
+                        <li>Inventory & Logistics Systems: Managed digital inventory tracking, location updates, and shipping documentation to maintain accurate, uninterrupted operations.</li><br>
+                        <li>Warehouse Operations & Safety: Operated forklifts and material-handling equipment with precision while enforcing strict safety standards.</li><br>
+                        <li>Process Optimization: Designed a color-coded inventory system that improved organization, efficiency, and team workflow.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="services__card">
+                <h2><br>
+                    Logistics Specialist<br>
+                    (United States Navy)</h2><br>
+                <p><u><i>12/2020 - 12/2023: San Diego, CA</u></i><br>
+                    <ul>
+                        <li>High-Risk Aviation Operations: Trained in radar/non-radar control, time-critical problem solving, and flight deck safety, with clear communication under extreme stress and noise.</li><br>
+                        <li>Proven Leadership & Asset Protection: Led duty sections, enforced inspection and operational standards, and safeguarded $70–100M aircraft assets at sea with zero losses.</li><br>
+                        <li>Elite Performance & Discipline: Maintained perfect inspection readiness, mentored physical readiness, and competed on the All-Navy Wrestling Team, demonstrating resilience and teamwork.</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div class="services__card">
+                <h2><br>
+                    Supply Chain Inventory Manager<br>
+                    (Target Distribution Center)</h2><br>
+                <p><u><i>7/2017 - 2/2020: Stuarts Draft, VA</i></u><br>
+                    <ul>
+                        <li>Training & Team Development: Mentored and trained 20+ new hires through structured instruction and performance assessments.</li><br>
+                        <li>Quality Control & Compliance: Conducted inspections on 75,000+ products, enforcing OSHA standards and preventing defects from reaching retail.</li><br>
+                        <li>High-Volume Operations: Processed 500,000+ products with precision, ensuring supply chain efficiency and inventory accuracy.</li>                 
+                    </ul>
+                </p>
+            </div>
+
+            <div class="services__card">
+                <h2><br>
+                    Reception Operations Strategist<br>
+                    (Waynesboro YMCA)</h2><br>
+                <p><u><i>6/2015 - 7/2017: Waynesboro, VA</i></u><br>
+                    <ul>
+                        <li>Event & Operations Coordination: Managed real-time communication with supervisors during large-scale events (200+ attendees) to ensure smooth operations and positive guest experiences.</li><br>
+                        <li>High-Volume Customer Service: Handled 5,000+ inbound calls, providing scheduling, account updates, and accurate program guidance.</li><br>
+                        <li>Account Management & Revenue Support: Proactively contacted customers regarding outstanding balances, improving account resolution and revenue collection.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
 
-<!-- SERVICES -->
-<section id="services" class="section section--services">
-  <div class="section__inner services">
-    <h2>Work History</h2>
-    <div class="services__grid">
-      <!-- cards unchanged structurally -->
+    <!-- Education -->
+    <div class="main" id="education">
+        <div class="main__container">
+            <div class="main__content">
+                <h1></h1>
+                <h2>Education</h2>
+                <p><u>Airman Professional Apprenticeship Career Track</u><br>
+                    (Air Technical Training Center - Pensacola, FL)<br>
+                    9/2021 - 10/2021<br>
+                    <br>
+                    <u>Air Traffic Control</u><br>
+                    (Air Technical Training Center - Pensacola, FL)<br>
+                    4/2021 - 7/2021<br>
+                    <br>
+                    <u>Recruit Training Command</u><br>
+                    (United States Naval Academy - Great Lakes Naval Training Center, IL)<br>
+                    12/2020 - 2/2021<br>
+                    <br>
+                    <u>General Studies</u><br>
+                    (Blue Ridge Community College - Weyers Cave, VA)<br>
+                    8/2018 - 10/2018
+                </p>
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card" id="card-2"><i class="fas fa-solid fa-circle-user"></i></div>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="section section--education">
-  <div class="section__inner education">
-    <h2>Education</h2>
-    <p>Airman Professional Apprenticeship Career Track...</p>
-  </div>
-</section>
-
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
